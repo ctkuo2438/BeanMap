@@ -1,0 +1,15 @@
+{
+  "short_name": "BeanMap",
+  "name": "BeanMap 灣區買豆指南",
+  "icons": [
+    {
+      "src": "beanmap.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#254b3c",
+  "background_color": "#f8f6f0"
+}

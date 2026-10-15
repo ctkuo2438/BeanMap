@@ -1,0 +1,1754 @@
+{
+  "schema_version": 1,
+  "title": "BeanMap Bay Area seed catalog",
+  "updated_on": "2026-10-15",
+  "scope": {
+    "name": "South Bay and selected Peninsula cities",
+    "cities": [
+      {
+        "id": "sunnyvale",
+        "name": "Sunnyvale"
+      },
+      {
+        "id": "mountain-view",
+        "name": "Mountain View"
+      },
+      {
+        "id": "santa-clara",
+        "name": "Santa Clara"
+      },
+      {
+        "id": "cupertino",
+        "name": "Cupertino"
+      },
+      {
+        "id": "san-jose",
+        "name": "San Jose"
+      },
+      {
+        "id": "milpitas",
+        "name": "Milpitas"
+      },
+      {
+        "id": "palo-alto",
+        "name": "Palo Alto"
+      },
+      {
+        "id": "los-gatos",
+        "name": "Los Gatos"
+      },
+      {
+        "id": "campbell",
+        "name": "Campbell"
+      },
+      {
+        "id": "south-san-francisco",
+        "name": "South San Francisco"
+      }
+    ]
+  },
+  "verification_policy": {
+    "confirmed": "官方門市聲明、店家菜單、明確取貨政策，或品牌各門市售豆政策搭配有效據點頁。",
+    "unconfirmed": "已核對據點地址，但整豆販售或門市購買方式仍待確認；歷史失效頁不作為確認依據。",
+    "inventory": "所有資料均不代表即時庫存；時間戳表示公開來源查核日期。",
+    "coordinates": "未完成獨立座標查核時保持 null，不使用城市中心代替店家座標。"
+  },
+  "brands": {
+    "home": {
+      "name": "HOME Coffee Roasters",
+      "kind": "roaster",
+      "website_url": "https://homecoffeesf.com/",
+      "bean_shop_url": "https://homecoffeesf.com/collections/coffee",
+      "bean_shop_source_id": "home-shop",
+      "summary": "品牌咖啡豆與門市零售。",
+      "summary_en": "House-roasted coffee beans, available online and at the shop."
+    },
+    "dana": {
+      "name": "Dana Street Roasting Company",
+      "kind": "roaster",
+      "website_url": "https://www.danastreetroasting.com/",
+      "bean_shop_url": "https://www.danastreetroasting.com/order-online",
+      "bean_shop_source_id": "dana-order",
+      "summary": "Mountain View 的烘豆咖啡店，可到店買豆。",
+      "summary_en": "A Mountain View coffee roaster with beans available in store."
+    },
+    "redrock": {
+      "name": "Red Rock Coffee",
+      "kind": "retailer",
+      "website_url": "https://redrockcoffee.com/",
+      "bean_shop_url": null,
+      "bean_shop_source_id": null,
+      "summary": "販售 Sightglass 整豆的咖啡店。",
+      "summary_en": "A coffee shop selling Sightglass whole-bean coffee."
+    },
+    "barefoot": {
+      "name": "Barefoot Coffee Roasters",
+      "kind": "roaster",
+      "website_url": "https://www.barefootcoffee.com/",
+      "bean_shop_url": "https://www.barefootcoffee.com/collections/all-coffee",
+      "bean_shop_source_id": "barefoot-shop",
+      "summary": "可到 Campbell 咖啡店買豆或預訂取貨。",
+      "summary_en": "Buy beans at the Campbell cafe or order ahead for pickup."
+    },
+    "tico": {
+      "name": "Tico Coffee Roasters",
+      "kind": "roaster",
+      "website_url": "https://www.ticoroasters.com/",
+      "bean_shop_url": "https://www.ticoroasters.com/collections/coffee",
+      "bean_shop_source_id": "tico-shop",
+      "summary": "Campbell 烘豆品牌，支援預訂後到烘豆廠自取。",
+      "summary_en": "A Campbell roaster offering preorder pickup at its roastery."
+    },
+    "chromatic": {
+      "name": "Chromatic Coffee",
+      "kind": "roaster",
+      "website_url": "https://www.chromaticcoffee.com/",
+      "bean_shop_url": "https://www.chromaticcoffee.com/",
+      "bean_shop_source_id": "chromatic-shop",
+      "summary": "San Jose 烘豆咖啡店，提供咖啡豆預訂取貨。",
+      "summary_en": "A San Jose coffee roaster offering bean orders for pickup."
+    },
+    "moonwake": {
+      "name": "Moonwake Coffee Roasters",
+      "kind": "roaster",
+      "website_url": "https://moonwakecoffeeroasters.com/",
+      "bean_shop_url": "https://moonwakecoffeeroasters.com/",
+      "bean_shop_source_id": "moonwake-shop",
+      "summary": "San Jose 烘豆咖啡店，提供店內買豆與指定日自取。",
+      "summary_en": "A San Jose roaster with in-store beans and pickup on designated days."
+    },
+    "lgcrc": {
+      "name": "Los Gatos Coffee Roasting Company",
+      "kind": "roaster",
+      "website_url": "https://www.lgcrc.com/",
+      "bean_shop_url": "https://www.lgcrc.com/",
+      "bean_shop_source_id": "lgcrc",
+      "summary": "Los Gatos 市中心的烘豆咖啡店。",
+      "summary_en": "A coffee roaster and cafe in downtown Los Gatos."
+    },
+    "greatbear": {
+      "name": "Great Bear Coffee Roasting",
+      "kind": "roaster",
+      "website_url": "https://greatbearcoffee.com/",
+      "bean_shop_url": "https://greatbearcoffee.com/shop/",
+      "bean_shop_source_id": "greatbear-shop",
+      "summary": "Los Gatos 店家菜單提供袋裝烘焙咖啡豆。",
+      "summary_en": "A Los Gatos cafe with bags of roasted coffee on its order menu."
+    },
+    "ijava": {
+      "name": "iJava Cafe",
+      "kind": "coffee_brand",
+      "website_url": "https://www.ijavacafe.com/",
+      "bean_shop_url": null,
+      "bean_shop_source_id": null,
+      "summary": "San Jose 咖啡店，目前官網尚未確認整豆零售方式。",
+      "summary_en": "A San Jose cafe whose current website does not confirm whole-bean retail options."
+    },
+    "philz": {
+      "name": "Philz Coffee",
+      "kind": "roaster",
+      "website_url": "https://philzcoffee.com/",
+      "bean_shop_url": null,
+      "bean_shop_source_id": null,
+      "summary": "品牌提供咖啡豆門市自取；可由據點頁前往下單。",
+      "summary_en": "The brand offers coffee bean pickup at its shops. Order through the location page."
+    },
+    "peets": {
+      "name": "Peet’s Coffee",
+      "kind": "roaster",
+      "website_url": "https://www.peets.com/",
+      "bean_shop_url": "https://www.peets.com/collections/coffee-beans",
+      "bean_shop_source_id": "peets-shop",
+      "summary": "品牌 coffeebars 販售袋裝咖啡豆，也可網購。",
+      "summary_en": "The brand sells bagged coffee at its coffeebars and through its online shop."
+    },
+    "voyager": {
+      "name": "Voyager Craft Coffee",
+      "kind": "coffee_brand",
+      "website_url": "https://voyagercraftcoffee.com/",
+      "bean_shop_url": "https://www.voyagercraftcoffeeorders.com/coffee-beans",
+      "bean_shop_source_id": "voyager-shop",
+      "summary": "官網有咖啡豆商店與多個據點，分店售豆方式待逐店確認。",
+      "summary_en": "An online bean shop and several cafes; in-store bean sales need branch-level checks."
+    },
+    "nirvana": {
+      "name": "Nirvana Soul Coffee",
+      "kind": "roaster",
+      "website_url": "https://www.nirvanasoulcoffee.com/",
+      "bean_shop_url": "https://www.nirvanasoulcoffee.com/coffee",
+      "bean_shop_source_id": "nirvana-shop",
+      "summary": "San Jose 烘豆品牌，咖啡豆可由官網選購。",
+      "summary_en": "A San Jose coffee roaster with beans available from its official online shop."
+    },
+    "zombie": {
+      "name": "ZombieRunner Coffee",
+      "kind": "coffee_brand",
+      "website_url": "https://www.zombierunner.com/",
+      "bean_shop_url": "https://www.zombierunner.com/collections/coffee-beans",
+      "bean_shop_source_id": "zombie-shop",
+      "summary": "Palo Alto 咖啡品牌，官網販售整豆。",
+      "summary_en": "A Palo Alto coffee brand selling whole beans through its official website."
+    },
+    "verve": {
+      "name": "Verve Coffee Roasters",
+      "kind": "roaster",
+      "website_url": "https://www.vervecoffee.com/",
+      "bean_shop_url": "https://www.vervecoffee.com/collections/all-coffee",
+      "bean_shop_source_id": "verve-shop",
+      "summary": "有 Palo Alto 咖啡店的烘豆品牌，官網販售咖啡豆。",
+      "summary_en": "A coffee roaster with a Palo Alto cafe and an online bean shop."
+    },
+    "voltaire": {
+      "name": "Voltaire Coffee Roasters",
+      "kind": "roaster",
+      "website_url": "https://www.voltairecoffeeroasters.com/",
+      "bean_shop_url": "https://www.voltairecoffeeroasters.com/our-coffee",
+      "bean_shop_source_id": "voltaire-shop",
+      "summary": "San Jose 烘豆品牌，官網列出袋裝咖啡商品。",
+      "summary_en": "A San Jose coffee roaster listing bagged coffee on its official website."
+    },
+    "antigua": {
+      "name": "Antigua Coffee Shop",
+      "kind": "coffee_brand",
+      "website_url": "https://toast.app/r/antigua-coffee-shop-437a-grand-avenue/order",
+      "bean_shop_url": null,
+      "bean_shop_source_id": null,
+      "summary": "店家菜單列袋裝咖啡；整豆形式仍待確認。",
+      "summary_en": "The order menu lists coffee bags; whole-bean availability still needs confirmation."
+    }
+  },
+  "locations": [
+    {
+      "id": "home-sunnyvale",
+      "brand_id": "home",
+      "name": "HOME Coffee Roasters",
+      "city_id": "sunnyvale",
+      "street_address": "200 W McKinley Ave, N-100",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "store_menu",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "home-sunnyvale-menu"
+      ],
+      "sales_evidence_source_ids": [
+        "home-sunnyvale-menu"
+      ],
+      "notes": "",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://homecoffeeroastersclement.toast.site/order/home-coffee-roasters-sunnyvale-200-west-mckinley-avenue-n-100",
+      "notes_en": ""
+    },
+    {
+      "id": "dana-mountain-view",
+      "brand_id": "dana",
+      "name": "Dana Street Roasting Company",
+      "city_id": "mountain-view",
+      "street_address": "744 W Dana St",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "store_statement",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "dana"
+      ],
+      "sales_evidence_source_ids": [
+        "dana"
+      ],
+      "notes": "",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.danastreetroasting.com/",
+      "notes_en": ""
+    },
+    {
+      "id": "redrock-mountain-view",
+      "brand_id": "redrock",
+      "name": "Red Rock Coffee",
+      "city_id": "mountain-view",
+      "street_address": "201 Castro St",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "store_statement",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "redrock-address"
+      ],
+      "sales_evidence_source_ids": [
+        "redrock-beans"
+      ],
+      "notes": "",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://redrockcoffee.com/contact",
+      "notes_en": ""
+    },
+    {
+      "id": "barefoot-campbell",
+      "brand_id": "barefoot",
+      "name": "Barefoot Coffee Roasters",
+      "city_id": "campbell",
+      "street_address": "1819 S Bascom Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "store_statement",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "barefoot-campbell"
+      ],
+      "sales_evidence_source_ids": [
+        "barefoot-campbell",
+        "barefoot-pickup"
+      ],
+      "notes": "買豆請使用咖啡豆商店；飲食外帶菜單不包含咖啡豆。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.barefootcoffee.com/pages/campbell",
+      "notes_en": "Use the coffee bean shop to buy beans. The food and drink takeout menu does not include beans."
+    },
+    {
+      "id": "tico-campbell",
+      "brand_id": "tico",
+      "name": "Tico Coffee Roasters",
+      "city_id": "campbell",
+      "street_address": "1334 Dell Ave, Ste G",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "pickup_policy",
+      "visit_mode": "order_ahead_pickup",
+      "location_source_ids": [
+        "tico-pickup"
+      ],
+      "sales_evidence_source_ids": [
+        "tico-pickup"
+      ],
+      "notes": "請先網路下單並等候取貨通知；取貨時段以官網為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.ticoroasters.com/pages/shipping-policy",
+      "notes_en": "Order online and wait for a pickup notification before visiting. Check the official website for pickup hours."
+    },
+    {
+      "id": "chromatic-san-jose",
+      "brand_id": "chromatic",
+      "name": "Chromatic Coffee",
+      "city_id": "san-jose",
+      "street_address": "460 Lincoln Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "pickup_policy",
+      "visit_mode": "order_ahead_pickup",
+      "location_source_ids": [
+        "chromatic-address"
+      ],
+      "sales_evidence_source_ids": [
+        "chromatic-pickup"
+      ],
+      "notes": "聯絡頁列 Suite 20，取貨 FAQ 列 Suite 10；取貨前請向店家確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.chromaticcoffee.com/pages/contact",
+      "notes_en": "The contact page lists Suite 20, while the pickup FAQ lists Suite 10. Confirm with the shop before pickup."
+    },
+    {
+      "id": "moonwake-san-jose",
+      "brand_id": "moonwake",
+      "name": "Moonwake Coffee Roasters",
+      "city_id": "san-jose",
+      "street_address": "1412 Saratoga Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "store_statement",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "moonwake-address"
+      ],
+      "sales_evidence_source_ids": [
+        "moonwake-pickup"
+      ],
+      "notes": "預訂咖啡豆的取貨日與營業日不同，請依店家確認通知取貨。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://moonwakecoffeeroasters.com/pages/cafe",
+      "notes_en": "Bean preorder pickup days differ from cafe opening days. Follow the shop’s pickup confirmation."
+    },
+    {
+      "id": "lgcrc-los-gatos",
+      "brand_id": "lgcrc",
+      "name": "Los Gatos Coffee Roasting Company",
+      "city_id": "los-gatos",
+      "street_address": "101 W Main St",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "store_statement",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "lgcrc"
+      ],
+      "sales_evidence_source_ids": [
+        "lgcrc"
+      ],
+      "notes": "",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.lgcrc.com/info.html",
+      "notes_en": ""
+    },
+    {
+      "id": "greatbear-los-gatos",
+      "brand_id": "greatbear",
+      "name": "Great Bear Coffee Roasting",
+      "city_id": "los-gatos",
+      "street_address": "19 N Santa Cruz Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "store_menu",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "greatbear-menu"
+      ],
+      "sales_evidence_source_ids": [
+        "greatbear-menu"
+      ],
+      "notes": "",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://order.online/store/great-bear-los-gatos-24900679",
+      "notes_en": ""
+    },
+    {
+      "id": "ijava-delmas",
+      "brand_id": "ijava",
+      "name": "iJava Cafe · Delmas",
+      "city_id": "san-jose",
+      "street_address": "387 Delmas Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "ijava-delmas"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "舊零售說明頁已失效；目前僅確認此據點地址，整豆零售方式待重新查核。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.ijavacafe.com/locations/delmas",
+      "notes_en": "The old retail information page is unavailable. Only this location’s address is confirmed; whole-bean retail options need another check."
+    },
+    {
+      "id": "ijava-willow-glen",
+      "brand_id": "ijava",
+      "name": "iJava Cafe · Willow Glen",
+      "city_id": "san-jose",
+      "street_address": "2306 Almaden Rd #150",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "ijava-almaden"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "舊零售說明頁已失效；目前僅確認此據點地址，整豆零售方式待重新查核。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.ijavacafe.com/locations/almaden",
+      "notes_en": "The old retail information page is unavailable. Only this location’s address is confirmed; whole-bean retail options need another check."
+    },
+    {
+      "id": "philz-sunnyvale",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Sunnyvale",
+      "city_id": "sunnyvale",
+      "street_address": "125 S Frances St",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-sunnyvale"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/sunnyvale",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-campbell",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Campbell",
+      "city_id": "campbell",
+      "street_address": "1976 S Bascom Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-campbell"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/campbell",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-cupertino-main",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Cupertino Main",
+      "city_id": "cupertino",
+      "street_address": "19439 Stevens Creek Blvd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-cupertino-main"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/cupertino-main",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-deanza-cupertino",
+      "brand_id": "philz",
+      "name": "Philz Coffee · DeAnza",
+      "city_id": "cupertino",
+      "street_address": "20686 Stevens Creek Blvd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-deanza-cupertino"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/deanza-cupertino",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-forest-ave",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Forest Ave",
+      "city_id": "palo-alto",
+      "street_address": "101 Forest Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-forest-ave"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/forest-ave",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-los-gatos",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Los Gatos",
+      "city_id": "los-gatos",
+      "street_address": "681 Blossom Hill Rd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-los-gatos"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/los-gatos",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-brokaw-commons",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Brokaw Commons",
+      "city_id": "san-jose",
+      "street_address": "1085 E Brokaw Rd, Suite 70",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-brokaw-commons"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/brokaw-commons",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-west-valley",
+      "brand_id": "philz",
+      "name": "Philz Coffee · West Valley",
+      "city_id": "san-jose",
+      "street_address": "5205 Prospect Rd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-locations"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-willow-glen",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Willow Glen",
+      "city_id": "san-jose",
+      "street_address": "1115 Lincoln Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-willow-glen"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations/willow-glen",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "philz-paseo-san-jose",
+      "brand_id": "philz",
+      "name": "Philz Coffee · Downtown San Jose",
+      "city_id": "san-jose",
+      "street_address": "118 Paseo de San Antonio Walk",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "philz-locations"
+      ],
+      "sales_evidence_source_ids": [
+        "philz-pickup"
+      ],
+      "notes": "依品牌咖啡豆自取政策確認；分店當日豆款以店家為準。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://philzcoffee.com/locations",
+      "notes_en": "Confirmed using the brand’s coffee bean pickup policy. Check with this branch for today’s selection."
+    },
+    {
+      "id": "peets-sunnyvale",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Sunnyvale",
+      "city_id": "sunnyvale",
+      "street_address": "144 W El Camino Real",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-sunnyvale"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/sunnyvale",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-mountain-view-castro",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Castro Street",
+      "city_id": "mountain-view",
+      "street_address": "420 Castro St",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-mountain-view-castro"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/mountain-view-castro",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-santa-clara",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Rivermark",
+      "city_id": "santa-clara",
+      "street_address": "3932 Rivermark Plaza",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-santa-clara"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/santa-clara",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-milpitas",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Milpitas",
+      "city_id": "milpitas",
+      "street_address": "543 E Calaveras Blvd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-milpitas"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/milpitas",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-south-sf",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · South San Francisco",
+      "city_id": "south-san-francisco",
+      "street_address": "102 Grand Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-south-sf"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/south-sf",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "voyager-og",
+      "brand_id": "voyager",
+      "name": "Voyager Craft Coffee · OG Santa Clara",
+      "city_id": "santa-clara",
+      "street_address": "3985 Stevens Creek Blvd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "voyager-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "官網有咖啡豆商店；此分店現場售豆與自取方式尚未逐店確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://voyagercraftcoffee.com/locations",
+      "notes_en": "The brand has an online bean shop. In-store bean sales and pickup at this branch have not been confirmed."
+    },
+    {
+      "id": "voyager-alameda",
+      "brand_id": "voyager",
+      "name": "Voyager Craft Coffee · Alameda",
+      "city_id": "santa-clara",
+      "street_address": "2221 The Alameda",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "voyager-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "官網有咖啡豆商店；此分店現場售豆與自取方式尚未逐店確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://voyagercraftcoffee.com/locations",
+      "notes_en": "The brand has an online bean shop. In-store bean sales and pickup at this branch have not been confirmed."
+    },
+    {
+      "id": "voyager-cupertino",
+      "brand_id": "voyager",
+      "name": "Voyager Craft Coffee · Cupertino",
+      "city_id": "cupertino",
+      "street_address": "20807 Stevens Creek Blvd, Suite 200",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "voyager-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "官網有咖啡豆商店；此分店現場售豆與自取方式尚未逐店確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://voyagercraftcoffee.com/locations",
+      "notes_en": "The brand has an online bean shop. In-store bean sales and pickup at this branch have not been confirmed."
+    },
+    {
+      "id": "voyager-st-john",
+      "brand_id": "voyager",
+      "name": "Voyager Craft Coffee · St. John",
+      "city_id": "san-jose",
+      "street_address": "111 W St John St, Suite 100",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "voyager-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "官網有咖啡豆商店；此分店現場售豆與自取方式尚未逐店確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://voyagercraftcoffee.com/locations",
+      "notes_en": "The brand has an online bean shop. In-store bean sales and pickup at this branch have not been confirmed."
+    },
+    {
+      "id": "nirvana-san-jose",
+      "brand_id": "nirvana",
+      "name": "Nirvana Soul · Downtown San Jose",
+      "city_id": "san-jose",
+      "street_address": "315 S 1st St",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "nirvana-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "品牌官網販售咖啡豆；分店現場販售方式待確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.nirvanasoulcoffee.com/contact",
+      "notes_en": "The brand sells beans online. In-store bean sales at this branch have not been confirmed."
+    },
+    {
+      "id": "nirvana-cupertino",
+      "brand_id": "nirvana",
+      "name": "Nirvana Soul · Cupertino",
+      "city_id": "cupertino",
+      "street_address": "19700 Vallco Pkwy, Ste 190",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "nirvana-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "品牌官網販售咖啡豆；分店現場販售方式待確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.nirvanasoulcoffee.com/contact",
+      "notes_en": "The brand sells beans online. In-store bean sales at this branch have not been confirmed."
+    },
+    {
+      "id": "zombie-california",
+      "brand_id": "zombie",
+      "name": "ZombieRunner Coffee · California Ave",
+      "city_id": "palo-alto",
+      "street_address": "344 California Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "zombie-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "官網整豆可網購；此據點現場售豆方式待確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.zombierunner.com/pages/locations",
+      "notes_en": "Whole beans are available online. In-store bean sales at this location have not been confirmed."
+    },
+    {
+      "id": "zombie-barron-park",
+      "brand_id": "zombie",
+      "name": "ZombieRunner Coffee · Barron Park",
+      "city_id": "palo-alto",
+      "street_address": "3990 El Camino Real, Suite C",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "zombie-locations"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "官網整豆可網購；此據點現場售豆方式待確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.zombierunner.com/pages/locations",
+      "notes_en": "Whole beans are available online. In-store bean sales at this location have not been confirmed."
+    },
+    {
+      "id": "verve-palo-alto",
+      "brand_id": "verve",
+      "name": "Verve Coffee · University Ave",
+      "city_id": "palo-alto",
+      "street_address": "162 University Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "verve-location"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "品牌官網有咖啡豆商店；Palo Alto 據點現場售豆方式待確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.vervecoffee.com/pages/locations",
+      "notes_en": "The brand has an online bean shop. In-store bean sales at the Palo Alto location have not been confirmed."
+    },
+    {
+      "id": "voltaire-san-jose",
+      "brand_id": "voltaire",
+      "name": "Voltaire Coffee Roasters",
+      "city_id": "san-jose",
+      "street_address": "360 S Market St, Suite 80",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "voltaire-location"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "官網列袋裝咖啡商品；門市自取及現場售豆方式待確認。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.voltairecoffeeroasters.com/",
+      "notes_en": "The website lists bagged coffee. Shop pickup and in-store bean sales have not been confirmed."
+    },
+    {
+      "id": "antigua-south-sf",
+      "brand_id": "antigua",
+      "name": "Antigua Coffee Shop",
+      "city_id": "south-san-francisco",
+      "street_address": "437A Grand Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "unconfirmed",
+      "confirmation_basis": "unconfirmed",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "antigua-menu"
+      ],
+      "sales_evidence_source_ids": [],
+      "notes": "店家菜單列 Coffee bags；整豆或研磨形式待確認，尚未列為已確認買豆據點。",
+      "last_checked_on": "2026-10-14",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://toast.app/r/antigua-coffee-shop-437a-grand-avenue/order",
+      "notes_en": "The menu lists “Coffee bags”, but does not confirm whether they contain whole beans or ground coffee. This location is not counted as confirmed."
+    },
+    {
+      "id": "peets-willow-glen",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Willow Glen",
+      "city_id": "san-jose",
+      "street_address": "1140 Lincoln Ave, Suite C",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-willow-glen"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-15",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/willow-glen",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-town-country",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Town & Country",
+      "city_id": "palo-alto",
+      "street_address": "855 El Camino Real, Suite 77",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-town-country"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-15",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/town-country",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-palo-alto",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Downtown Palo Alto",
+      "city_id": "palo-alto",
+      "street_address": "153 Homer Ave",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-palo-alto"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-15",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/palo-alto",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-charleston",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Charleston",
+      "city_id": "palo-alto",
+      "street_address": "3904 Middlefield Rd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-charleston"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-15",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/charleston",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-los-gatos",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Los Gatos",
+      "city_id": "los-gatos",
+      "street_address": "798-1 Blossom Hill Rd",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-los-gatos"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-15",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/los-gatos",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    },
+    {
+      "id": "peets-rose-garden",
+      "brand_id": "peets",
+      "name": "Peet’s Coffee · Rose Garden",
+      "city_id": "san-jose",
+      "street_address": "1295 The Alameda",
+      "state": "CA",
+      "country": "US",
+      "in_store_beans": "confirmed",
+      "confirmation_basis": "brand_policy",
+      "visit_mode": "walk_in",
+      "location_source_ids": [
+        "peets-rose-garden"
+      ],
+      "sales_evidence_source_ids": [
+        "peets-retail"
+      ],
+      "notes": "依品牌 coffeebar 販售咖啡豆政策確認；當日品項請向門市確認。",
+      "last_checked_on": "2026-10-15",
+      "coordinates": null,
+      "coordinate_source_id": null,
+      "stock_status": "unknown",
+      "location_page_url": "https://www.peets.com/pages/store/rose-garden",
+      "notes_en": "Confirmed using the brand’s coffeebar bean sales policy. Contact this shop for today’s selection."
+    }
+  ],
+  "sources": {
+    "home-shop": {
+      "title": "HOME Coffee Roasters 咖啡豆商店",
+      "url": "https://homecoffeesf.com/collections/coffee",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌販售袋裝咖啡豆。",
+      "title_en": "HOME Coffee Roasters bean shop"
+    },
+    "home-sunnyvale-menu": {
+      "title": "HOME Sunnyvale 官方訂購菜單",
+      "url": "https://homecoffeeroastersclement.toast.site/order/home-coffee-roasters-sunnyvale-200-west-mckinley-avenue-n-100",
+      "kind": "merchant_menu",
+      "checked_on": "2026-10-14",
+      "supports": "店址與 Whole Coffee Beans 零售分類，提供自取。",
+      "title_en": "HOME Sunnyvale official order menu"
+    },
+    "dana": {
+      "title": "Dana Street Roasting Company 官網",
+      "url": "https://www.danastreetroasting.com/",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "744 W Dana St；明列營業時間內販售咖啡豆。",
+      "title_en": "Dana Street Roasting Company official website"
+    },
+    "dana-order": {
+      "title": "Dana Street 官方訂購入口",
+      "url": "https://www.danastreetroasting.com/order-online",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "店家提供當地咖啡豆訂購入口；配送規則以店家為準。",
+      "title_en": "Dana Street official ordering page"
+    },
+    "redrock-address": {
+      "title": "Red Rock Coffee 聯絡頁",
+      "url": "https://redrockcoffee.com/contact",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "201 Castro Street, Mountain View。",
+      "title_en": "Red Rock Coffee contact page"
+    },
+    "redrock-beans": {
+      "title": "Red Rock Coffee 菜單",
+      "url": "https://redrockcoffee.com/menu",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "明列店內可購買 Sightglass 整豆。",
+      "title_en": "Red Rock Coffee menu"
+    },
+    "barefoot-campbell": {
+      "title": "Barefoot Campbell 店家頁",
+      "url": "https://www.barefootcoffee.com/pages/campbell",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "1819 S Bascom Ave；明列店內販售整豆。",
+      "title_en": "Barefoot Campbell location page"
+    },
+    "barefoot-pickup": {
+      "title": "Barefoot 取貨政策",
+      "url": "https://www.barefootcoffee.com/pages/faq",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "可選 Campbell Cafe Pickup；一般顧客不能在烘豆廠取貨。",
+      "title_en": "Barefoot pickup policy"
+    },
+    "barefoot-shop": {
+      "title": "Barefoot 咖啡豆商店",
+      "url": "https://www.barefootcoffee.com/collections/all-coffee",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌咖啡豆購物入口。",
+      "title_en": "Barefoot bean shop"
+    },
+    "tico-pickup": {
+      "title": "Tico Coffee Roasters 配送及取貨政策",
+      "url": "https://www.ticoroasters.com/pages/shipping-policy",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "1334 Dell Ave Ste G；網路下單後依通知到烘豆廠自取。",
+      "title_en": "Tico Coffee Roasters shipping and pickup policy"
+    },
+    "tico-shop": {
+      "title": "Tico 咖啡豆商店",
+      "url": "https://www.ticoroasters.com/collections/coffee",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌咖啡豆購物入口。",
+      "title_en": "Tico bean shop"
+    },
+    "chromatic-address": {
+      "title": "Chromatic 聯絡頁",
+      "url": "https://www.chromaticcoffee.com/pages/contact",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "烘豆咖啡店位於 460 Lincoln Ave，聯絡頁列 Suite 20。",
+      "title_en": "Chromatic contact page"
+    },
+    "chromatic-pickup": {
+      "title": "Chromatic 取貨 FAQ",
+      "url": "https://www.chromaticcoffee.com/pages/pickup-faq",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "支援咖啡豆預訂取貨；此頁列 Suite 10，與聯絡頁不同。",
+      "title_en": "Chromatic pickup FAQ"
+    },
+    "chromatic-shop": {
+      "title": "Chromatic 咖啡豆商店",
+      "url": "https://www.chromaticcoffee.com/",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌咖啡豆購物入口。",
+      "title_en": "Chromatic bean shop"
+    },
+    "moonwake-address": {
+      "title": "Moonwake 咖啡店頁",
+      "url": "https://moonwakecoffeeroasters.com/pages/cafe",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "1412 Saratoga Avenue, San Jose。",
+      "title_en": "Moonwake cafe page"
+    },
+    "moonwake-pickup": {
+      "title": "Moonwake FAQ",
+      "url": "https://moonwakecoffeeroasters.com/pages/faq",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "說明店內咖啡豆上架與週四預訂取貨；取貨須等確認通知。",
+      "title_en": "Moonwake FAQ"
+    },
+    "moonwake-shop": {
+      "title": "Moonwake 咖啡豆商店",
+      "url": "https://moonwakecoffeeroasters.com/",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌咖啡豆購物入口。",
+      "title_en": "Moonwake bean shop"
+    },
+    "lgcrc": {
+      "title": "Los Gatos Coffee Roasting Company 店家頁",
+      "url": "https://www.lgcrc.com/info.html",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "101 West Main Street；明列販售烘焙咖啡豆。",
+      "title_en": "Los Gatos Coffee Roasting Company location page"
+    },
+    "greatbear-menu": {
+      "title": "Great Bear 店家訂購菜單",
+      "url": "https://order.online/store/great-bear-los-gatos-24900679",
+      "kind": "merchant_menu",
+      "checked_on": "2026-10-14",
+      "supports": "19 N Santa Cruz Ave；店家菜單列 Roasted Coffee Beans 與自取。",
+      "title_en": "Great Bear order menu"
+    },
+    "greatbear-shop": {
+      "title": "Great Bear Coffee Roasting 商店",
+      "url": "https://greatbearcoffee.com/shop/",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌袋裝咖啡購物入口。",
+      "title_en": "Great Bear Coffee Roasting shop"
+    },
+    "ijava-retail": {
+      "title": "iJava 店家零售說明",
+      "url": "https://www.ijavacafe.com/store-2",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "歷史零售說明頁目前回傳 404，僅保留作為舊資料排除紀錄，不作為售豆確認依據。",
+      "available": false,
+      "title_en": "iJava retail information"
+    },
+    "ijava-delmas": {
+      "title": "iJava Delmas 店家頁",
+      "url": "https://www.ijavacafe.com/locations/delmas",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "387 Delmas Ave, San Jose。",
+      "title_en": "iJava Delmas location page"
+    },
+    "ijava-almaden": {
+      "title": "iJava Willow Glen 店家頁",
+      "url": "https://www.ijavacafe.com/locations/almaden",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "2306 Almaden Rd #150, San Jose。",
+      "title_en": "iJava Willow Glen location page"
+    },
+    "philz-pickup": {
+      "title": "Philz 官方 App FAQ",
+      "url": "https://philzcoffee.com/pages/app-faq",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌取貨政策包含咖啡豆；不代表特定豆款當日有貨。",
+      "title_en": "Philz official app FAQ"
+    },
+    "philz-locations": {
+      "title": "Philz 官方據點清單",
+      "url": "https://philzcoffee.com/locations",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "目前列出的營運據點及街道地址。",
+      "title_en": "Philz official location directory"
+    },
+    "peets-retail": {
+      "title": "Peet’s 官方咖啡豆購買政策",
+      "url": "https://faq.peets.com/hc/en-us/articles/204768049-My-coffee-doesn-t-taste-good-what-should-I-do",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌政策確認 coffeebars 販售袋裝咖啡豆；個別品項庫存需另查。",
+      "title_en": "Peet’s official coffee bean purchasing policy"
+    },
+    "peets-shop": {
+      "title": "Peet’s 咖啡豆商店",
+      "url": "https://www.peets.com/collections/coffee-beans",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌咖啡豆購物入口。",
+      "title_en": "Peet’s bean shop"
+    },
+    "voyager-locations": {
+      "title": "Voyager 官方據點",
+      "url": "https://voyagercraftcoffee.com/locations",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "四個核心城市據點；Park HQ 明列暫停營業。",
+      "title_en": "Voyager official location directory"
+    },
+    "voyager-shop": {
+      "title": "Voyager 官方咖啡豆商店",
+      "url": "https://www.voyagercraftcoffeeorders.com/coffee-beans",
+      "kind": "official_storefront",
+      "checked_on": "2026-10-14",
+      "supports": "咖啡豆商店及自取據點選單；尚未逐店完成商品可取貨確認。",
+      "title_en": "Voyager official bean shop"
+    },
+    "nirvana-locations": {
+      "title": "Nirvana Soul 聯絡及據點頁",
+      "url": "https://www.nirvanasoulcoffee.com/contact",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "San Jose 及 Cupertino 據點地址。",
+      "title_en": "Nirvana Soul contact and location page"
+    },
+    "nirvana-shop": {
+      "title": "Nirvana Soul 咖啡豆商店",
+      "url": "https://www.nirvanasoulcoffee.com/coffee",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌販售咖啡豆；未單獨確認各分店現場售豆。",
+      "title_en": "Nirvana Soul bean shop"
+    },
+    "zombie-locations": {
+      "title": "ZombieRunner 官方據點",
+      "url": "https://www.zombierunner.com/pages/locations",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "California Ave 與 Barron Park 兩個 Palo Alto 據點。",
+      "title_en": "ZombieRunner official locations"
+    },
+    "zombie-shop": {
+      "title": "ZombieRunner 咖啡豆商店",
+      "url": "https://www.zombierunner.com/collections/coffee-beans",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌販售整豆；未單獨確認兩分店現場售豆。",
+      "title_en": "ZombieRunner bean shop"
+    },
+    "verve-location": {
+      "title": "Verve 官方據點",
+      "url": "https://www.vervecoffee.com/pages/locations",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "Palo Alto University Ave 據點。",
+      "title_en": "Verve official locations"
+    },
+    "verve-shop": {
+      "title": "Verve 咖啡豆商店",
+      "url": "https://www.vervecoffee.com/collections/all-coffee",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "品牌咖啡豆商店；未單獨確認 Palo Alto 現場售豆。",
+      "title_en": "Verve bean shop"
+    },
+    "voltaire-location": {
+      "title": "Voltaire 官方店家頁",
+      "url": "https://www.voltairecoffeeroasters.com/",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "360 S Market St Suite 80，品牌說明自行烘豆。",
+      "title_en": "Voltaire official location page"
+    },
+    "voltaire-shop": {
+      "title": "Voltaire 咖啡豆商店",
+      "url": "https://www.voltairecoffeeroasters.com/our-coffee",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "袋裝咖啡購物入口；未單獨完成門市自取確認。",
+      "title_en": "Voltaire bean shop"
+    },
+    "antigua-menu": {
+      "title": "Antigua Coffee Shop 店家訂購菜單",
+      "url": "https://toast.app/r/antigua-coffee-shop-437a-grand-avenue/order",
+      "kind": "merchant_menu",
+      "checked_on": "2026-10-14",
+      "supports": "437A Grand Avenue；菜單列 Coffee bags，整豆或研磨形式待確認。",
+      "title_en": "Antigua Coffee Shop order menu"
+    },
+    "philz-sunnyvale": {
+      "title": "Philz Sunnyvale 官方據點",
+      "url": "https://philzcoffee.com/locations/sunnyvale",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz Sunnyvale official location page"
+    },
+    "philz-campbell": {
+      "title": "Philz Campbell 官方據點",
+      "url": "https://philzcoffee.com/locations/campbell",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz Campbell official location page"
+    },
+    "philz-cupertino-main": {
+      "title": "Philz Cupertino Main 官方據點",
+      "url": "https://philzcoffee.com/locations/cupertino-main",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz Cupertino Main official location page"
+    },
+    "philz-deanza-cupertino": {
+      "title": "Philz DeAnza 官方據點",
+      "url": "https://philzcoffee.com/locations/deanza-cupertino",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz DeAnza official location page"
+    },
+    "philz-forest-ave": {
+      "title": "Philz Forest Ave 官方據點",
+      "url": "https://philzcoffee.com/locations/forest-ave",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz Forest Ave official location page"
+    },
+    "philz-los-gatos": {
+      "title": "Philz Los Gatos 官方據點",
+      "url": "https://philzcoffee.com/locations/los-gatos",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz Los Gatos official location page"
+    },
+    "philz-brokaw-commons": {
+      "title": "Philz Brokaw Commons 官方據點",
+      "url": "https://philzcoffee.com/locations/brokaw-commons",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz Brokaw Commons official location page"
+    },
+    "philz-willow-glen": {
+      "title": "Philz Willow Glen 官方據點",
+      "url": "https://philzcoffee.com/locations/willow-glen",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Philz Willow Glen official location page"
+    },
+    "peets-sunnyvale": {
+      "title": "Peet’s Sunnyvale 官方據點",
+      "url": "https://www.peets.com/pages/store/sunnyvale",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Peet’s Sunnyvale official location page"
+    },
+    "peets-mountain-view-castro": {
+      "title": "Peet’s Castro Street 官方據點",
+      "url": "https://www.peets.com/pages/store/mountain-view-castro",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Peet’s Castro Street official location page"
+    },
+    "peets-santa-clara": {
+      "title": "Peet’s Rivermark 官方據點",
+      "url": "https://www.peets.com/pages/store/santa-clara",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Peet’s Rivermark official location page"
+    },
+    "peets-milpitas": {
+      "title": "Peet’s Milpitas 官方據點",
+      "url": "https://www.peets.com/pages/store/milpitas",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Peet’s Milpitas official location page"
+    },
+    "peets-south-sf": {
+      "title": "Peet’s South San Francisco 官方據點",
+      "url": "https://www.peets.com/pages/store/south-sf",
+      "kind": "official_website",
+      "checked_on": "2026-10-14",
+      "supports": "門市街道地址及目前據點資訊。",
+      "title_en": "Peet’s South San Francisco official location page"
+    },
+    "peets-willow-glen": {
+      "title": "Peet’s Willow Glen 官方據點",
+      "url": "https://www.peets.com/pages/store/willow-glen",
+      "kind": "official_website",
+      "checked_on": "2026-10-15",
+      "supports": "目前官方 coffeebar 據點與街道地址；售豆依品牌門市政策確認。",
+      "title_en": "Peet’s Willow Glen official location page"
+    },
+    "peets-town-country": {
+      "title": "Peet’s Town & Country 官方據點",
+      "url": "https://www.peets.com/pages/store/town-country",
+      "kind": "official_website",
+      "checked_on": "2026-10-15",
+      "supports": "目前官方 coffeebar 據點與街道地址；售豆依品牌門市政策確認。",
+      "title_en": "Peet’s Town & Country official location page"
+    },
+    "peets-palo-alto": {
+      "title": "Peet’s Downtown Palo Alto 官方據點",
+      "url": "https://www.peets.com/pages/store/palo-alto",
+      "kind": "official_website",
+      "checked_on": "2026-10-15",
+      "supports": "目前官方 coffeebar 據點與街道地址；售豆依品牌門市政策確認。",
+      "title_en": "Peet’s Downtown Palo Alto official location page"
+    },
+    "peets-charleston": {
+      "title": "Peet’s Charleston 官方據點",
+      "url": "https://www.peets.com/pages/store/charleston",
+      "kind": "official_website",
+      "checked_on": "2026-10-15",
+      "supports": "目前官方 coffeebar 據點與街道地址；售豆依品牌門市政策確認。",
+      "title_en": "Peet’s Charleston official location page"
+    },
+    "peets-los-gatos": {
+      "title": "Peet’s Los Gatos 官方據點",
+      "url": "https://www.peets.com/pages/store/los-gatos",
+      "kind": "official_website",
+      "checked_on": "2026-10-15",
+      "supports": "目前官方 coffeebar 據點與街道地址；售豆依品牌門市政策確認。",
+      "title_en": "Peet’s Los Gatos official location page"
+    },
+    "peets-rose-garden": {
+      "title": "Peet’s Rose Garden 官方據點",
+      "url": "https://www.peets.com/pages/store/rose-garden",
+      "kind": "official_website",
+      "checked_on": "2026-10-15",
+      "supports": "目前官方 coffeebar 據點與街道地址；售豆依品牌門市政策確認。",
+      "title_en": "Peet’s Rose Garden official location page"
+    }
+  },
+  "excluded_locations": [
+    {
+      "name": "Barefoot Bay Area Roastery",
+      "reason": "一般消費者目前不能在烘豆廠取貨，未作為可到店買豆據點。",
+      "source_ids": [
+        "barefoot-pickup"
+      ]
+    },
+    {
+      "name": "Voyager Park HQ",
+      "reason": "官方據點頁標示暫停營業。",
+      "source_ids": [
+        "voyager-locations"
+      ]
+    },
+    {
+      "name": "iJava Cupertino",
+      "reason": "舊零售頁列此地址，但目前據點導覽沒有列入；待重新確認後才收錄。",
+      "source_ids": [
+        "ijava-retail"
+      ]
+    }
+  ]
+}
